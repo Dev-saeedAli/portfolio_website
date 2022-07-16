@@ -1,0 +1,232 @@
+.about{
+    width: 85%;
+    min-height: 100vh;
+    padding: 40px 40px;
+    background: #f7fcff;
+    color: black;
+    // overflow-x: hidden;
+    transition: all .2s ease-in-out;
+    animation: fadein .6s ease ;
+
+    @media screen and (max-width:600px) {
+        width: 100%;
+        z-index: 100;
+        padding: 100px 40px;
+    }
+
+    &.darkMode{
+        background: black;
+        color: white;
+    }
+   
+    .about-heading{
+
+        h2{
+            font-size: 2rem;
+            text-transform : capitalize;
+        }
+    }
+    .svg{
+        font-size: 4rem;
+        color: red;
+        position: relative;
+        top: -30px;
+       
+    }
+
+    .about-intro{
+        position: relative;
+        top: -30px;
+
+        h3{
+            font-size: 1.4rem;
+        }
+        .name{
+            color: red;
+        }
+        p{
+            font-size: 1rem;
+            margin-top: 5px;
+        }
+    }
+    .details-section{
+        width: 100%;
+        // background: red;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 40px;
+
+        .details-info{
+            display: flex;
+            flex-wrap: wrap ;
+            flex-direction: column;
+            width: 50%;
+
+            @media screen and (max-width:768px) {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            
+            .head{
+                font-size: .9rem;
+                margin-bottom: 20px;
+                // color: white;
+                font-weight: 600;
+            }
+            .btn-group{
+                width: 100%;
+                display: flex;
+
+                .btn{
+                    text-align: center;
+                    font-size: .8rem;
+                    font-weight: bolder;
+                    display: inline-block;
+                    padding: 5px 10px;
+                    background: red;
+                    color: white;
+                    width: 150px;
+                    border-radius: 20px;
+                    margin-right : 20px;
+                    margin-top: 10px;
+                    cursor: pointer;
+                    transition: all .3s ease-in-out;
+
+                    &:hover{
+                        background-color: rgb(181, 9, 9);
+                    }
+                }
+            }
+        }
+        .details-knowledge{
+            // display: flex;
+            width: 50%;
+            padding: 0px 40px;
+
+            @media screen and (max-width:768px) {
+                width: 100%;
+                padding: 0;
+            }
+            
+            meter{
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+                background: red;
+                height: 8px;
+                border-radius: 10px;
+                transition: all .3s ease-in-out;
+            }
+            label{
+                display: flex;
+                justify-content: space-between;
+        }
+      }
+   }
+   .roles{
+       display: flex;
+       width: 100%;
+       box-shadow: 0px 2px 3px rgba(0,0,0,0.2), rgba(0,0,0,0.3);
+       flex-wrap: wrap;
+
+       span{
+           display: flex;
+           align-items: center;
+       }
+       
+       .education-container{
+           width: 45%;
+           background: white;
+           margin-right: 35px;
+           transition: all .3s ease-in-out;
+
+           @media screen and (max-width:768px) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+
+           &.darkMode{
+                background: #242424;
+                color: white;
+          }
+
+           h3{
+            font-size: 1.4rem;
+            font-weight: 700;
+            padding:20px 20px 0px;
+            text-align: center;
+           }
+
+           .education{
+               padding: 20px;
+
+               .edu-header{
+                   font-size: .8rem;
+                   margin: 20px 0px 40px;
+
+                   h4{
+                       font-size: .9rem;
+                       margin: 8px 0px;
+                   }
+                   
+                   svg{
+                    font-size: 1rem;
+                    margin-right: 7px;
+                }
+            }
+
+        }
+    }
+        .experience-container{
+            width: 45%;
+            background : #ffff;
+            transition: all .3s ease-in-out;
+
+            @media screen and (max-width:768px) {
+                width: 100%;
+            }
+
+
+            &.darkMode{
+                background: #242424;
+                color: white;
+          }
+
+            h3{
+                font-size: 1.4rem;
+                font-weight: 700;
+                padding:20px 20px 0px;
+                text-align: center;
+            }
+            
+            .experience{
+                padding: 20px;
+
+                .exp-header{
+                   font-size: .8rem;
+                   margin: 20px 0px 40px;
+
+                   h4{
+                    margin: 8px 0px;
+                    font-size: .9rem;
+                   }
+                   
+                   svg{
+                    font-size: 1rem;
+                    margin-right: 7px;
+                }
+               }
+            }
+       }
+   }
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}

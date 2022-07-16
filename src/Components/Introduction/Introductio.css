@@ -1,0 +1,200 @@
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  min-height: 100vh;
+  background: #f7fcff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0px 40px;
+  position: relative;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.home.animate {
+  -webkit-animation: fadein .6s ease;
+          animation: fadein .6s ease;
+}
+
+@media screen and (max-width: 840px) {
+  .home {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .home {
+    width: 100%;
+  }
+}
+
+.home.darkMode {
+  background: #171717;
+  color: white;
+}
+
+.home .intro-description {
+  width: 47%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 840px) {
+  .home .intro-description {
+    width: 70%;
+    display: block;
+    margin-top: 35%;
+  }
+}
+
+.home .intro-description .line {
+  font-size: 1.6rem;
+  -webkit-animation: blink .7s infinite;
+          animation: blink .7s infinite;
+}
+
+.home .intro-description h3 {
+  font-size: 1.4rem;
+}
+
+.home .intro-description h4 {
+  font-size: 1.4rem;
+  margin: 20px 0px;
+  letter-spacing: 2px;
+}
+
+.home .intro-description .name {
+  color: red;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.home .intro-description p {
+  font-size: .9rem;
+  font-weight: lighter;
+  text-transform: capitalize;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 840px) {
+  .home .intro-description p {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+}
+
+.home .intro-description .btn {
+  width: 100px;
+  background: red;
+  color: white;
+  border: none;
+  outline: unset;
+  padding: 10px 10px;
+  border-radius: 10px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.home .intro-description .btn:hover {
+  background: #e01010;
+}
+
+.home .intro-image {
+  width: 28%;
+  position: relative;
+}
+
+@media screen and (max-width: 840px) {
+  .home .intro-image {
+    display: none;
+  }
+}
+
+.home .intro-image img {
+  max-width: 100%;
+}
+
+.home .intro-image .spanFirst {
+  position: absolute;
+  top: -80px;
+  right: -40px;
+  font-size: 8rem;
+  color: red;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.home .intro-image .spanSecond {
+  position: absolute;
+  bottom: -80px;
+  left: -40px;
+  font-size: 8rem;
+  color: red;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.home .intro-image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=Introductio.css.map */

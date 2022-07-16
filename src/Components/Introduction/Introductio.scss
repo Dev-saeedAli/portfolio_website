@@ -1,0 +1,147 @@
+        .home{
+            display: flex;
+            width: 85%;
+            min-height: 100vh;
+            background: #f7fcff;
+            align-items: center;
+            justify-content: center;
+            gap: 0px 40px;
+            position: relative;
+            transition: all .3s ease-in-out;
+            flex-wrap: wrap;
+            overflow: hidden;
+
+            &.animate{
+                animation: fadein .6s ease ;
+            }
+            
+            @media screen and(max-width: 840px) {
+                width: 75%;
+            }
+            @media screen and(max-width: 550px) {
+                width: 100%;
+            }
+            
+            &.darkMode{
+                background: #171717;
+                color: white;
+            }
+            
+            .intro-description{
+                // overflow: hidden;
+                width: 47%;
+                // background-color: lightcyan;
+                height: 100%;
+                display: grid;
+                place-content: center;
+                padding-right: 20px;
+                
+                @media screen and(max-width: 840px) {
+                    width: 70%;
+                    display: block;
+                    margin-top: 35%;
+                }
+                
+            .line{
+                font-size: 1.6rem;
+                animation: blink .7s infinite;
+            }
+            
+            h3{
+                font-size: 1.4rem;
+                
+            }
+            
+            h4{
+                font-size: 1.4rem;
+                margin: 20px 0px;
+                letter-spacing: 2px;
+            }
+            .name{
+                color: red;
+                transition: all .5s ease-in-out;
+            }
+            p{
+                font-size: .9rem;
+                font-weight: lighter;
+                text-transform: capitalize;
+                line-height:1.8;
+                margin-bottom: 40px;
+                
+                @media screen and(max-width: 840px) {
+                    font-size: 1.2rem;
+                    line-height: 2;
+                }
+            }
+            .btn{
+                width: 100px;
+                background: red;
+                color: white;
+                border: none;
+                outline: unset;
+                padding: 10px 10px;
+                border-radius: 10px;
+                transition: all .3s ease;
+                cursor: pointer;
+                
+                &:hover{
+                    background: rgb(224, 16, 16);
+                }
+            }
+        }
+
+        .intro-image{
+            width: 28%;
+            position: relative;
+            // overflow: hidden;
+            
+            @media screen and(max-width: 840px) {
+                display: none;
+            }
+            
+            img{
+                max-width: 100%;
+            }
+            
+            .spanFirst{
+                position: absolute;
+                top: -80px;
+                right: -40px;
+                font-size: 8rem;
+                color: red;
+                transform: rotate(180deg);
+                transition: all .3s ease-in-out;
+            }
+            
+            .spanSecond{
+                position: absolute;
+                bottom: -80px;
+                left: -40px;
+                font-size: 8rem;
+                color: red;
+                transition: all .3s ease-in-out;
+            }
+            
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }   
+
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }50%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}

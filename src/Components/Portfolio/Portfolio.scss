@@ -1,0 +1,165 @@
+.portfolio{
+    width: 85%;
+    min-height: 100vh;
+    padding: 40px 40px;
+    background: #f7fcff;
+    color: black;
+    transition: all .2s ease-in-out;
+    animation: fadein .4s ease;
+
+    @media screen and (max-width:600px) {
+        width: 100%;
+        z-index: 100;
+        padding: 100px 40px;
+    }
+
+    &.darkMode{
+        background: black;
+        color: white;
+    }
+   
+    .portfolio-heading{
+
+        h2{
+            font-size: 2rem;
+            text-transform : capitalize;
+        }
+    }
+    .svg{
+        font-size: 4rem;
+        color: red;
+        position: relative;
+        top: -25px;
+       
+    }
+    .project-container{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        .project-header{
+
+            h4{
+                text-decoration: underline;
+                font-size: 1.4rem;
+                margin-bottom: 20px;
+                margin-left: 1rem;
+            }
+        }
+
+        .project-body{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            
+            
+            .project-img{
+                width: 13rem;
+                height: 58vh;
+                border-radius: 20px;
+                text-align: center;
+                cursor: pointer;
+                position: relative;
+                transition: transform .3s ease;
+
+                .btn-container{
+                    position: absolute;
+                    bottom: 30px;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    padding: 10px;
+                    opacity: 0;
+                    transition: all .4s ease ;
+                    display: flex;
+                    
+                    @media screen and (max-width:768px) {
+                        padding: 10px 40px;
+                    }
+                    .btn{
+                        background: red;
+                        color: white;
+                        outline: none;
+                        border: none;
+                        margin: 0px 5px;
+                        padding: 8px 20px;
+                        border-radius: 20px;
+                        z-index: 6000;
+                        transition: all .1s ease ;
+                        font-size: .8rem;
+                        font-weight: 700;
+                        letter-spacing: 1.02;
+                        animation : fadeup .4s ease;
+                        
+                        &:hover{
+                            background:linear-gradient(rgba(255, 37, 8, 0.833), rgba(255, 0, 0, 0.769));
+                        }
+                    }
+                }
+
+                &:hover{
+                    transform: scale(1.05);
+
+                    .btn-container{
+                        opacity: 1;
+                    }
+                    .fade{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: linear-gradient(rgba(77, 139, 255, 0.719), rgba(0,0,0,0.2));
+                    }
+                }
+
+                @media screen and (max-width: 600px) {
+                    width: 17rem;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fadeup {
+    0%{
+        // opacity: 0;
+        transform: translateY(100px);
+    }
+    20%{
+        opacity: 1;
+        transform: translateY(80px);
+    }
+    40%{
+        opacity: 1;
+        transform: translateY(60px);
+    }
+    60%{
+        opacity: 1;
+        transform: translateY(40px);
+    }
+    80%{
+        opacity: 1;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
