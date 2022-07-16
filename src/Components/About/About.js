@@ -5,6 +5,7 @@ import { AiFillCalendar } from "react-icons/ai"
 import { dataExp, dataEduc} from "../../data"
 import { AppContext } from '../../App';
 import { Link } from 'react-router-dom'
+import personalCv from "../../Images/said_cv.png"
 
 
 function About() {
@@ -52,7 +53,7 @@ function About() {
           <span className='head'>Email : &nbsp;  <span className='body'> mohammedsaidali69@gmail.com</span></span>
           <span className='head'>Phone Number : &nbsp;  <span className='body'>+971-54-767-9616</span></span>
           <div className="btn-group">
-          <div className="btn" style={{backgroundColor : bg}}>Download Cv</div>
+          <div className="btn" style={{backgroundColor : bg}}><a href={personalCv} download>Download Cv</a></div>
           <div className="btn" style={{backgroundColor : bg}}><Link to="/contact">Hire Me</Link></div>
           </div>
         </div>
