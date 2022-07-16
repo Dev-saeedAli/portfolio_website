@@ -25,23 +25,23 @@ function Navbar({home, about, service, portfolio, contact}) {
         <ul>
           {/* adding active state color to the nav components and darkMode styling*/}
           <Link to={"/"} style={(
-             path == "/"? {background : bg, width : "95%", padding : "8px 0px",fontWeight : "700", color : "white", borderRadius : "10px"} : null)
+             path === "/"? {background : bg, width : "95%", padding : "8px 0px",fontWeight : "700", color : "white", borderRadius : "10px"} : null)
             }> <span  className={darkMode ? `icons darkMode`: `icons`}>{home}Home</span></Link>
 
           <Link to={"/about"} style={(
-            path == "/about"? {background : bg, width : "95%", padding : "8px 0px",fontWeight : "700", color : "white", borderRadius : "10px"} : null)
+            path === "/about"? {background : bg, width : "95%", padding : "8px 0px",fontWeight : "700", color : "white", borderRadius : "10px"} : null)
             } ><span  className={darkMode ? `icons darkMode`: `icons`}>{about}About</span></Link>
 
           <Link to={"/service"}style={(
-             path == "/service"? {background : bg, width : "95%", padding : "8px 0px",fontWeight : "700", color : "white", borderRadius : "10px"} : null)
+             path === "/service"? {background : bg, width : "95%", padding : "8px 0px",fontWeight : "700", color : "white", borderRadius : "10px"} : null)
             }> <span  className={darkMode ? `icons darkMode`: `icons`}>{service}Services</span></Link>
 
           <Link to={"/portfolio"} style={(
-             path == "/portfolio"? {background : bg, width : "95%", padding : "8px 0px",fontWeight : "700", color : "white", borderRadius : "10px"} : null)
+             path === "/portfolio"? {background : bg, width : "95%", padding : "8px 0px",fontWeight : "700", color : "white", borderRadius : "10px"} : null)
             }> <span  className={darkMode ? `icons darkMode`: `icons`}>{portfolio}Portfolio </span></Link>         
 
           <Link to={"/contact"}style={(
-             path == "/contact"? {background : bg, width : "95%", padding : "8px 0px",fontWeight : "700", color : "white", borderRadius : "10px"} : null)
+             path === "/contact"? {background : bg, width : "95%", padding : "8px 0px",fontWeight : "700", color : "white", borderRadius : "10px"} : null)
             }> <span  className={darkMode ? `icons darkMode`: `icons`}>{contact}Contact</span></Link>
            {/* adding active state color to the nav components and darkmode styling*/}
         </ul>

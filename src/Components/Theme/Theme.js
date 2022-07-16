@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import "../Theme/Theme.css"
 import { AiFillSetting } from "react-icons/ai"
 import { MdBrightness6 } from "react-icons/md"
-import App, { AppContext } from '../../App'
+import  { AppContext } from '../../App'
 
 function Theme() {
   const {themes, toggler, randomColors, changeTheme, changeMode} = useContext(AppContext)

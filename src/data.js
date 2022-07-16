@@ -22,17 +22,17 @@ const dataEduc = [
     {
         year : "2016",
         certificate : "Certificate of X from The New Indian School",
-        para : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga quas corporis rem laborum dolorem rerum asperiores dolore! Quibusdam, autem minus?"
+        para : "New Indian School is one of the top schools in Umm Al Quwain, United Arab Emirates. It follows the CBSE and Kerala Board Curriculum."
     },
     {
         year : "2016-2018",
         certificate : "Certificate of XII from The English School",
-        para : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga quas corporis rem laborum dolorem rerum asperiores dolore! Quibusdam, autem minus?"
+        para : "The English Private School in Umm Al Quwain was founded in 1983 with a handful of students and teachers. It moved to a new campus in 2009."
     },
     {
         year : "2020-2023",
         certificate : "Certificate of BCOM from Brilliance Educational Group",
-        para : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga quas corporis rem laborum dolorem rerum asperiores dolore! Quibusdam, autem minus?"
+        para : "Brillianz Group is one of the prominent and prestigious education provider in the GCC with a track record of fourteen glorious years."
     },
 ]
 
@@ -40,12 +40,12 @@ const dataExp = [
     {
         year : "2020 - 2021",
         company : "Cititrans Logistics L.L.C",
-        para : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga quas corporis rem laborum dolorem rerum asperiores dolore! Quibusdam, autem minus?"
+        para : "My work included coordinating shipments, Runsheet preparation, Managing problem shipments, updation of customer details, customer service , scanning of new shipment orders, Sorting parcels for delivery order."
     },
     {
         year : "2021 - 2022",
         company : "Amrut Pure Drinking Water",
-        para : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga quas corporis rem laborum dolorem rerum asperiores dolore! Quibusdam, autem minus?"
+        para : "My work included managing the income of current year, giving slips to sales man, receiving daily income and recording the system, managing accounts in tally erp9."
     }
 ]
 
@@ -132,7 +132,7 @@ const images =[
 const contactDetail = [
     {
         h4 : "Call Me On",
-        p : "054-767-9616",
+        p : "971-54-767-9616",
         svg : <FiPhoneCall/>
     },
     {
@@ -151,4 +151,4 @@ const contactDetail = [
         svg : <BsInstagram/>
     },
 ]
-export  { dataEduc, dataExp, service, images, contactDetail} ;
+export  { dataEduc, dataExp, service, images, contactDetail};

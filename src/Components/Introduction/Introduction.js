@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { AppContext } from '../../App';
 
 function Introduction () {
-  const { bg, darkMode, path, setPath} = useContext(AppContext)
+  const { bg, darkMode, setPath} = useContext(AppContext)
   setPath( window.location.pathname)
   // console.log(path)
   const words = ["Web developer... ", "Web designer... ", "React developer... "];
@@ -13,20 +13,20 @@ function Introduction () {
     let count = 1;
     let word_no = 0;
 
-    function writeText(){
-      let characters = words[word_no].slice(0, count)
-      count = count + 1;
-      setCurrentText(characters);
-      if(count > words[word_no].length){
-        word_no = word_no + 1;
-        count = 0
-      }
-      if(word_no === words.length){
-        word_no = 0
-      }
-    }
     useEffect(()=>{
-     setInterval(()=>{
+      setInterval(()=>{
+        function writeText(){
+          let characters = words[word_no].slice(0, count)
+          count = count + 1;
+          setCurrentText(characters);
+          if(count > words[word_no].length){
+            word_no = word_no + 1;
+            count = 0
+          }
+          if(word_no === words.length){
+            word_no = 0
+          }
+        }
         writeText()
      }, 340)
     },[])

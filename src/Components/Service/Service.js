@@ -5,7 +5,7 @@ import { service } from "../../data"
 import { AppContext } from '../../App'
 
 function Service() {
-  const { bg, darkMode, themes, path, setPath} = useContext(AppContext)
+  const { bg, darkMode, themes, setPath} = useContext(AppContext)
   setPath(window.location.pathname)
   // console.log(path)
     // console.log(themes)

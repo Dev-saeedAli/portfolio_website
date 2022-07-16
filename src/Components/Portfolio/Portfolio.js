@@ -5,7 +5,7 @@ import { images } from "../../data"
 import { AppContext } from '../../App'
 
 function Porfolio() {
-  const {bg, darkMode, themes, path, setPath} = useContext(AppContext)
+  const {bg, darkMode, themes, setPath} = useContext(AppContext)
   setPath(window.location.pathname)
   // console.log(path)
     // console.log(images)
@@ -25,7 +25,7 @@ function Porfolio() {
                   {images.map((image, index)=>(
                       <div key={index}>
                         <div className="project-img">
-                            <img src={image.img} alt=""/>
+                            <img src={image.img} alt="project image"/>
                           <div className="fade"></div>
                           <div className="btn-container">
                           <a style={themes ? {background : bg }:{ background:bg}} className="btn" target="_blank" href={image.github}>Github</a>

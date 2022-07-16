@@ -23,6 +23,11 @@
   color: white;
 }
 
+.about .header {
+  margin: 2.7rem .8rem;
+  position: relative;
+}
+
 .about .about-heading h2 {
   font-size: 2rem;
   text-transform: capitalize;

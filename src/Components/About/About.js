@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { CgDetailsLess } from "react-icons/cg"
 import "../About/About.css"
 import { AiFillCalendar } from "react-icons/ai"
