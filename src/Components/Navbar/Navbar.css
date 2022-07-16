@@ -31,11 +31,6 @@
   }
 }
 
-.navbar .header {
-  margin: 2.7rem 0;
-  position: relative;
-}
-
 @media screen and (max-width: 600px) {
   .navbar.navactive {
     width: 100%;
@@ -97,7 +92,7 @@
 }
 
 .navbar header {
-  margin: 2.7rem 0;
+  margin: 2.7rem .8rem;
   position: relative;
 }
 
