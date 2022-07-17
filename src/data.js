@@ -45,7 +45,7 @@ const dataExp = [
     {
         year : "2021 - 2022",
         company : "Amrut Pure Drinking Water",
-        para : "My work included managing the income of current year, giving slips to sales man, receiving daily income and recording the system, managing accounts in tally erp9."
+        para : "My work included managing the income of current year, distribution of slips to sales representatives, receiving daily income and recording the system, managing accounts in tally erp9."
     }
 ]
 
