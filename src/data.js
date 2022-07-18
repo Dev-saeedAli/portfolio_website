@@ -12,6 +12,7 @@ import fifthimage from "../src/Images/project_5.png"
 import sixthimage from "../src/Images/project_6.png"
 import seventhimage from "../src/Images/project_7.png"
 import eighthimage from "../src/Images/project_8.png"
+import ninethimage from "../src/Images/project_9.png"
 import { FiPhoneCall } from "react-icons/fi"
 import { GoLocation } from "react-icons/go"
 import { AiOutlineMail } from "react-icons/ai"
@@ -125,6 +126,11 @@ const images =[
         img : eighthimage ,
         link: "https://notes-app-new-2022.netlify.app",
         github : "https://github.com/Dev-saeedAli/notes"
+    },
+    {
+        img : ninethimage ,
+        link: "https://quiz-app-js-2022.netlify.app/",
+        github : "https://github.com/Dev-saeedAli/quiz_javascript"
     },
 ]
 
