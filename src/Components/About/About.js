@@ -5,7 +5,7 @@ import { AiFillCalendar } from "react-icons/ai"
 import { dataExp, dataEduc} from "../../data"
 import { AppContext } from '../../App';
 import { Link } from 'react-router-dom'
-import personalCv from "../../Images/saidali_cv.pdf"
+import personalCv from "../../Images/SaidAli__Resume(Main).pdf"
 
 
 function About() {
