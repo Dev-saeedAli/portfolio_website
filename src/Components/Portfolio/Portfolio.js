@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { CgDetailsLess } from "react-icons/cg"
 import "../../dist/Portfolio.css"
 import { images } from "../../data"
@@ -6,7 +6,9 @@ import { AppContext } from '../../App'
 
 function Porfolio() {
   const {bg, darkMode, themes, setPath} = useContext(AppContext)
-  setPath(window.location.pathname)
+  useEffect(() => {
+    setPath(window.location.pathname)
+  }, [])
 
   return (
     <>
