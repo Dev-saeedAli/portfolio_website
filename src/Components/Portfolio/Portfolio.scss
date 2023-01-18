@@ -52,7 +52,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
-            justify-content: center;
+            justify-content: flex-start;
             
             
             .project-img{
@@ -123,6 +123,7 @@
                     height: 100%;
                     object-fit: cover;
                     border-radius: 10px;
+                    border: 1px solid rgb(28, 28, 28);
                 }
             }
         }

@@ -5,12 +5,13 @@ import { AiFillCalendar } from "react-icons/ai"
 import { dataExp, dataEduc} from "../../data"
 import { AppContext } from '../../App';
 import { Link } from 'react-router-dom'
-import personalCv from "../../Images/SaidAli__resume__main.pdf"
+import personalCv from "../../Images/Said_Ali_Resume.pdf"
 
 
 function About() {
   const { bg, darkMode, setPath} = useContext(AppContext)
   setPath(window.location.pathname)
+  console.clear()
   const educ = dataEduc.map((data, index) =>{
     return (
       <div className='edu-header' key={index}>
@@ -49,8 +50,8 @@ function About() {
           <span className='head'>Degree : &nbsp;  <span className='body'> B COM</span></span>
           <span className='head'>Nationality : &nbsp;  <span className='body'>Indian</span></span>
           <span className='head'>Place : &nbsp;  <span className='body'>Umm al Quwain</span></span>
-          <span className='head'>Age : <span className='body'> 22</span></span>
-          <span className='head'>Email : &nbsp;  <span className='body'> mohammedsaidali69@gmail.com</span></span>
+          <span className='head'>Age : <span className='body'> 23</span></span>
+          <span className='head'>Email : &nbsp;  <span className='body'> devsaidali777@gmail.com</span></span>
           <span className='head'>Phone Number : &nbsp;  <span className='body'>+971-54-767-9616</span></span>
           <div className="btn-group">
           <div className="btn" style={{backgroundColor : bg}}><a href={personalCv} download>Download Cv</a></div>
@@ -68,10 +69,10 @@ function About() {
                 <label htmlFor="javascript"><div>Vanilla Javascript</div><div>60%</div></label>
                 <meter style={{backgroundColor : bg}}  className="html" id='javascript' value={5.5} min={0} max={10}>60%</meter>
 
-                <label htmlFor="react"><div>React Js</div><div>65%</div></label>
+                <label htmlFor="react"><div>React Js & Redux Toolkit</div><div>65%</div></label>
                 <meter style={{backgroundColor : bg}}  className="html" id='react' value={6} min={0} max={10}>65%</meter>
 
-                <label htmlFor="sass"><div>Bootstrap</div><div>70%</div></label>
+                <label htmlFor="sass"><div>Bootstrap5</div><div>70%</div></label>
                 <meter style={{backgroundColor : bg}}  className="html" id='sass' value={7} min={0} max={10}>70%</meter>
 
                 <label htmlFor="bootstrap"><div>Sass</div><div>65%</div></label>

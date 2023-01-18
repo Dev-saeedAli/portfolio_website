@@ -13,10 +13,11 @@ import sixthimage from "../src/Images/project_6.png"
 import seventhimage from "../src/Images/project_7.png"
 import eighthimage from "../src/Images/project_8.png"
 import ninethimage from "../src/Images/project_9.png"
+import tenthimage from "../src/Images/quiz_app.png"
+import eleventhimage from "../src/Images/blue_star.png"
+import twelvthimage from "../src/Images/twelvthimage.png"
 import { FiPhoneCall } from "react-icons/fi"
-import { GoLocation } from "react-icons/go"
-import { AiOutlineMail } from "react-icons/ai"
-import { BsInstagram } from "react-icons/bs"
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai"
 
 // education
 const dataEduc = [
@@ -88,6 +89,21 @@ const service = [
 // portfolio images
 const images =[
     {
+        img : tenthimage ,
+        link: "https://quiz-app-dev-said.netlify.app/",
+        github : "https://github.com/Dev-saeedAli/quiz__application"
+    },
+    {
+        img : eleventhimage ,
+        link: "https://blue-star-ecommerce-dev.netlify.app/",
+        github : "https://github.com/Dev-saeedAli/blue-star-ecommerce-"
+    },
+    {
+        img : twelvthimage ,
+        link: "https://tip-calculator-dev-saeed.netlify.app/",
+        github : "https://github.com/Dev-saeedAli/tip_calculator"
+    },
+    {
         img : firstimage,
         link: "https://netflix-clone-react-2022.netlify.app/",
         github : "https://github.com/Dev-saeedAli/netflix_clone"
@@ -142,19 +158,21 @@ const contactDetail = [
         svg : <FiPhoneCall/>
     },
     {
-        h4 : "Place",
-        p : "Umm al Quwain",
-        svg : <GoLocation/>
-    },
-    {
         h4 : "Email",
-        p : "mohammedsaidali69@gmail.com",
+        p : "devsaidali777@gmail.com",
         svg : <AiOutlineMail/>
     },
     {
-        h4 : "Instagram",
-        p : "godzilla_islive",
-        svg : <BsInstagram/>
+        h4 : "GITHUB",
+        p : "Dev-saeedAli",
+        svg : <AiFillGithub/>,
+        link : "https://github.com/Dev-saeedAli"
+    },
+    {
+        h4 : "Linkedin",
+        p : "Dev Saeed",
+        svg : <AiFillLinkedin/>,
+        link : "https://www.linkedin.com/in/mohammed-said-ali/"
     },
 ]
 export  { dataEduc, dataExp, service, images, contactDetail};

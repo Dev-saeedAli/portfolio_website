@@ -83,12 +83,22 @@ function Contact() {
 
                <div className="contact-body">
                  {contactDetail.map((contact)=>(
-                     <>
-                    <div className="contacts">
-                        <div style={themes ?{color : bg}: {color : bg}} className='svg-detail'>{contact.svg}</div>
-                        <h4>{contact.h4}</h4>
-                        <p>{contact.p}</p>
-                    </div>
+                     <>{
+                      contact.link ? ( 
+                        <a target="_blank" href={contact.link ? `${contact.link}` :""}>
+                        <div className="contacts">
+                            <div style={themes ?{color : bg}: {color : bg}} className='svg-detail'>{contact.svg}</div>
+                            <h4>{contact.h4}</h4>
+                            <p>{contact.p}</p>
+                        </div>
+                         </a>
+                      ) : ( 
+                     <div className="contacts">
+                      <div style={themes ?{color : bg}: {color : bg}} className='svg-detail'>{contact.svg}</div>
+                      <h4>{contact.h4}</h4>
+                      <p>{contact.p}</p>
+                    </div>)
+                     }
                      </>
                  ))}
                 </div>
