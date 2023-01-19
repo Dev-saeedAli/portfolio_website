@@ -1,14 +1,11 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 import { CgDetailsLess } from "react-icons/cg"
-import "../../dist/Portfolio.css"
 import { images } from "../../data"
 import { AppContext } from '../../App'
+import "../Portfolio/Portfolio.css"
 
 function Porfolio() {
-  const {bg, darkMode, themes, setPath} = useContext(AppContext)
-  useEffect(() => {
-    setPath(window.location.pathname)
-  }, [])
+  const {bg, darkMode} = useContext(AppContext)
 
   return (
     <>
@@ -25,11 +22,11 @@ function Porfolio() {
                   {images.map((image, index)=>(
                       <div key={index}>
                         <div className="project-img">
-                            <img src={image.img} alt="project"/>
+                            <img loading="lazy" src={image.img} alt="project"/>
                           <div className="fade"></div>
                           <div className="btn-container">
-                          <a style={themes ? {background : bg }:{ background:bg}} className="btn" target="_blank" href={image.github}>Github</a>
-                          <a style={themes ? {background : bg }:{ background:bg}} target="_blank" href={image.link} className="btn" >Website</a>
+                          <a style={{background : bg }} className="btn" target="_blank" rel='noreferrer' href={image.github}>Github</a>
+                          <a style={{background : bg }} target="_blank" rel='noreferrer'  href={image.link} className="btn" >Website</a>
                           </div>
                         </div>
                       </div>

@@ -5,9 +5,7 @@ import { Link } from 'react-router-dom';
 import { AppContext } from '../../App';
 
 function Introduction () {
-  const { bg, darkMode, setPath} = useContext(AppContext)
-  setPath( window.location.pathname)
-  // console.log(path)
+  const { bg, darkMode} = useContext(AppContext)
   const words = ["Web developer... ", "Web designer... ", "React developer... "];
     const [currentText, setCurrentText] = useState("");
     let count = 1;
@@ -15,7 +13,7 @@ function Introduction () {
 
     useEffect(()=>{
       setInterval(()=>{
-        function writeText(){
+        const writeText =()=>{
           let characters = words[word_no].slice(0, count)
           count = count + 1;
           setCurrentText(characters);
@@ -44,7 +42,7 @@ function Introduction () {
 
           <div className="intro-image">
               <span className='spanFirst' style={{color:`${bg}`}}>L</span>
-                <img src={userImage} alt="user-image" />
+                <img loading='lazy' src={userImage} alt="user-image" />
               <span className='spanSecond' style={{color:`${bg}`}}>L</span>
           </div>
       </section>

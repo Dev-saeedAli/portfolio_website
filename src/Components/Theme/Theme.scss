@@ -34,7 +34,8 @@
         
         &:first-child{
             animation: move 4s infinite linear;
-        }
+            -webkit-animation: move 4s infinite linear;
+}
     }
 }
 

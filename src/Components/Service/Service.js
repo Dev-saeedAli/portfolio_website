@@ -5,16 +5,12 @@ import { service } from "../../data"
 import { AppContext } from '../../App'
 
 function Service() {
-  const { bg, darkMode, themes, setPath} = useContext(AppContext)
-  setPath(window.location.pathname)
-  // console.log(path)
-    // console.log(themes)
-    // console.log(bg)
+  const { bg, darkMode} = useContext(AppContext)
 
     const details = service.map((item, index)=>{
         return (
             <div key={index} className={!darkMode ? 'card': 'card-darkmode card'}>
-               <div className='svg' style={ darkMode ? {background : bg} : themes ? {background : bg} : {background : bg}}>{item.svg}</div>
+               <div className='svg' style={{background: bg}}>{item.svg}</div>
               <h3>{item.header}</h3>
               <p>{item.para}</p>
             </div>

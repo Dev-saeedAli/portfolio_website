@@ -15,7 +15,11 @@ body, html{
   background: rgb(253, 253, 253);
 }
 .App{
-  display: flex;
+  display: grid;
+  grid-template-columns: 3fr 10fr;
+  @media screen and (max-width: 800px){
+    grid-template-columns: 1fr;
+  }
 }
 li{
   list-style: none;

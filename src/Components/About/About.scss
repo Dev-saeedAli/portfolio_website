@@ -1,17 +1,15 @@
 .about{
-    width: 85%;
     min-height: 100vh;
-    padding: 40px 40px;
+    padding: 100px 40px;
     background: #f7fcff;
     color: black;
-    // overflow-x: hidden;
     transition: all .2s ease-in-out;
     animation: fadein .6s ease ;
 
     @media screen and (max-width:600px) {
-        width: 100%;
         z-index: 100;
-        padding: 100px 40px;
+        padding: 100px 20px;
+     
     }
 
     &.darkMode{

@@ -1,16 +1,14 @@
 .portfolio{
-    width: 85%;
     min-height: 100vh;
-    padding: 40px 40px;
+    padding: 100px 40px;
     background: #f7fcff;
     color: black;
     transition: all .2s ease-in-out;
     animation: fadein .4s ease;
 
     @media screen and (max-width:600px) {
-        width: 100%;
         z-index: 100;
-        padding: 100px 40px;
+        padding: 100px 20px;
     }
 
     &.darkMode{
@@ -36,34 +34,52 @@
         display: flex;
         flex-direction: column;
         text-align: left;
+        @media screen and (max-width : 800px) {
+            text-align: center;
+        }
 
         .project-header{
 
             h4{
                 text-decoration: underline;
                 font-size: 1.4rem;
-                margin-bottom: 20px;
+                margin-bottom: 30px;
                 margin-left: 1rem;
             }
+            
         }
 
         .project-body{
-            width: 100%;
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
-            justify-content: flex-start;
+            justify-content: center;
             
             
             .project-img{
-                width: 13rem;
-                height: 58vh;
+                width: 100%;
+                min-width: 15rem;
                 border-radius: 20px;
                 text-align: center;
                 cursor: pointer;
                 position: relative;
                 transition: transform .3s ease;
-
+                object-fit: cover;
+                @media screen and (min-width:400px) {
+                    width: 25rem;
+                    border-radius: 10px;
+                    height: 60vh;
+                    margin: 10px 0px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+}
+                @media screen and (min-width:800px) {
+                    width: 10rem;
+                    height: 60vh;
+                }
+                
                 .btn-container{
                     position: absolute;
                     bottom: 30px;
@@ -74,6 +90,8 @@
                     opacity: 0;
                     transition: all .4s ease ;
                     display: flex;
+                    justify-content: center;
+                    gap: 3px;
                     
                     @media screen and (max-width:768px) {
                         padding: 10px 40px;
@@ -83,7 +101,6 @@
                         color: white;
                         outline: none;
                         border: none;
-                        margin: 0px 5px;
                         padding: 8px 20px;
                         border-radius: 20px;
                         z-index: 6000;
@@ -92,10 +109,7 @@
                         font-weight: 700;
                         letter-spacing: 1.02;
                         animation : fadeup .4s ease;
-                        
-                        &:hover{
-                            background:linear-gradient(rgba(255, 37, 8, 0.833), rgba(255, 0, 0, 0.769));
-                        }
+                    
                     }
                 }
 
@@ -115,11 +129,8 @@
                     }
                 }
 
-                @media screen and (max-width: 600px) {
-                    width: 17rem;
-                }
                 img{
-                    width: 90%;
+                    width: 100%;
                     height: 100%;
                     object-fit: cover;
                     border-radius: 10px;

@@ -9,9 +9,7 @@ import personalCv from "../../Images/Saeed-Ali-Resume.pdf"
 
 
 function About() {
-  const { bg, darkMode, setPath} = useContext(AppContext)
-  setPath(window.location.pathname)
-  console.clear()
+  const { bg, darkMode} = useContext(AppContext)
   const educ = dataEduc.map((data, index) =>{
     return (
       <div className='edu-header' key={index}>

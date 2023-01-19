@@ -6,7 +6,7 @@ import { MdOutlinePermContactCalendar } from "react-icons/md"
 import { CgDetailsMore } from "react-icons/cg"
 import { BsChatLeftText, BsListUl } from "react-icons/bs"
 import About from './Components/About/About';
-import  { useState, createContext } from 'react';
+import  { useState, createContext, useCallback } from 'react';
 import Theme from './Components/Theme/Theme';
 import { Route, Routes } from 'react-router';
 import Service from './Components/Service/Service';
@@ -16,33 +16,34 @@ import Contact from './Components/Contact/Contact';
 export const AppContext = createContext(null) 
 
 function App() {
-  const [path, setPath] = useState( null)
   const [themes, setThemes] = useState(false)
   const randomColors = ["red", "coral", "green", "blue", "purple"];
   const [bg, setBg] = useState("red")
   const [ darkMode, setDarkMode ] = useState(false)
+  const [ navactive, setNavactive] = useState(false)
+
 
   // making the darkMode to be active
-  function changeMode(){
+  const changeMode = ()=>{
     setDarkMode(prevMode => !prevMode)
   }
   
    // making the theme icons to toggle colors
-  function toggler(){
+  const toggler = ()=>{
       setThemes(prevTheme => !prevTheme)
   }
 
   // changing the them if clicked
-  function changeTheme(Theme){
+  const changeTheme = (Theme) => {
     if(Theme){
-      setBg(prevBg => Theme)
+      setBg(Theme)
     }
 }
 
   return (
     <div className="App">
       <AppContext.Provider value={
-        { bg, setBg, darkMode,setDarkMode,themes,setThemes,randomColors,toggler,changeMode,changeTheme, path, setPath}}>
+        { bg, setBg, darkMode,setDarkMode,navactive, setNavactive,themes,setThemes,randomColors,toggler,changeMode,changeTheme }}>
             <Navbar
               home={<AiOutlineHome/>}
               about={<MdOutlinePermContactCalendar/>}
@@ -60,7 +61,7 @@ function App() {
 
                 <Route path="/portfolio" element={(<Portfolio />)}/>
 
-                  <Route path="/contact" element={(<Contact/>)}/>
+                <Route path="/contact" element={(<Contact/>)}/>
 
                   </Routes>
               <Theme/>

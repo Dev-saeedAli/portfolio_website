@@ -1,6 +1,5 @@
         .home{
             display: flex;
-            width: 85%;
             min-height: 100vh;
             background: #f7fcff;
             align-items: center;
@@ -15,12 +14,6 @@
                 animation: fadein .6s ease ;
             }
             
-            @media screen and(max-width: 840px) {
-                width: 75%;
-            }
-            @media screen and(max-width: 550px) {
-                width: 100%;
-            }
             
             &.darkMode{
                 background: #171717;
@@ -28,15 +21,13 @@
             }
             
             .intro-description{
-                // overflow: hidden;
                 width: 47%;
-                // background-color: lightcyan;
                 height: 100%;
                 display: grid;
                 place-content: center;
                 padding-right: 20px;
                 
-                @media screen and(max-width: 840px) {
+                @media screen and(max-width: 900px) {
                     width: 70%;
                     display: block;
                     margin-top: 35%;
@@ -45,7 +36,8 @@
             .line{
                 font-size: 1.6rem;
                 animation: blink .7s infinite;
-            }
+                -webkit-animation: blink .7s infinite;
+}
             
             h3{
                 font-size: 1.4rem;
@@ -95,7 +87,7 @@
             position: relative;
             // overflow: hidden;
             
-            @media screen and(max-width: 840px) {
+            @media screen and(max-width: 900px) {
                 display: none;
             }
             
