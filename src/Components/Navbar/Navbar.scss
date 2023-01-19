@@ -12,9 +12,10 @@
 
     @media screen and(max-width: 840px) {
         width: 14.5rem;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: -300px;
+        bottom: 0;
     }
 
 
@@ -59,13 +60,12 @@
     }
     
         .burgeractive{
-            position: fixed;
+            position: absolute;
             top: 44px;
             left: 15rem;
             z-index: 2000;
-            font-size: 23px;
+            font-size: 30px;
             color: red;
-
         }
 
     header{

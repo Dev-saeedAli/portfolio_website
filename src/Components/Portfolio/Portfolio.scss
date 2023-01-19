@@ -57,26 +57,16 @@
             
             
             .project-img{
-                width: 100%;
-                min-width: 15rem;
+                width: 20rem;
+                height: 60vh;
                 border-radius: 20px;
                 text-align: center;
                 cursor: pointer;
                 position: relative;
                 transition: transform .3s ease;
                 object-fit: cover;
-                @media screen and (min-width:400px) {
-                    width: 25rem;
-                    border-radius: 10px;
-                    height: 60vh;
-                    margin: 10px 0px;
-                    -webkit-border-radius: 10px;
-                    -moz-border-radius: 10px;
-                    -ms-border-radius: 10px;
-                    -o-border-radius: 10px;
-}
                 @media screen and (min-width:800px) {
-                    width: 10rem;
+                    width: 12rem;
                     height: 60vh;
                 }
                 
