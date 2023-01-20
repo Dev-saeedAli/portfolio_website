@@ -70,11 +70,11 @@ function About() {
                 <label htmlFor="react"><div>React Js & Redux Toolkit</div><div>65%</div></label>
                 <meter style={{backgroundColor : bg}}  className="html" id='react' value={6} min={0} max={10}>65%</meter>
 
-                <label htmlFor="sass"><div>Bootstrap5</div><div>70%</div></label>
-                <meter style={{backgroundColor : bg}}  className="html" id='sass' value={7} min={0} max={10}>70%</meter>
+                <label htmlFor="bootstrap"><div>Bootstrap5</div><div>70%</div></label>
+                <meter style={{backgroundColor : bg}}  className="html" id='bootstrap' value={7} min={0} max={10}>70%</meter>
 
-                <label htmlFor="bootstrap"><div>Sass</div><div>65%</div></label>
-                <meter style={{backgroundColor : bg}}  className="html" id='bootstrap' value={6.5} min={0} max={10}>65%</meter>
+                <label htmlFor="sass"><div>Sass</div><div>65%</div></label>
+                <meter style={{backgroundColor : bg}}  className="html" id='sass' value={6.5} min={0} max={10}>65%</meter>
           </div>
       </div>
 
